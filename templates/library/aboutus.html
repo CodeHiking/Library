@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Library Management System</title>
+    <style media="screen">
+    .jumbotron{
+      {% comment %} margin-top: 0px;; {% endcomment %}
+      margin-bottom: 144px;
+    }
+    
+    .jumbotron h1{
+      text-align: center;
+    }
+
+    .jumbotron .btn:hover{
+      background:#41cba9;
+    }
+
+    .jumbotron .btn{
+      font-size:15px;
+    }
+    
+    .alert{
+      margin: 0px;
+    }
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+    {% include "library/navbar.html" %}
+<br><br>
+<center><h3 class = 'alert alert-success'>About Us !</h3></center>
+    <div class="jumbotron">
+  <h1 class="display-4">Hello, Reader!</h1>
+  <p class="lead">A service dedicated to Admin and Student. We provide online resources, professional support
+  and guidance to all our students whenever, and from wherever they have chosen to study.
+  It's one of the major projects you can use for your personal use as well as to present in your college.
+  This is about a Library which manages the records of the books its author and the type of book you want to store.
+  Also, on top of all this, there is an admin who will be managing the entire application's authorization and authentication,
+  not no intruder can log in and modify the data, as a login for admin is also available.</p>
+  <hr class="my-4">
+  <p>Explore our Website.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+  </p>
+</div>
+
+    {% include "library/footer.html" %}
+  </body>
+</html>
